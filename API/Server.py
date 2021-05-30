@@ -14,10 +14,7 @@ def i():
     url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id={}&date={}".format(y,today)
     payload={}
     headers = {
-        "User-Agent":"PostmanRuntime/7.28.0",
-        "Accept":"*/*",
-        "Accept-Encoding":"gzip, deflate, br",
-        "Connection":"keep-alive"
+        'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
     }
     print(url)
     w = {
