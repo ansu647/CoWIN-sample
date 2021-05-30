@@ -19,6 +19,7 @@ def i():
         "Accept-Encoding":"gzip, deflate, br",
         "Connection":"keep-alive"
     }
+    print(url)
     w = {
 
     }
