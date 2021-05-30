@@ -1,6 +1,5 @@
 from flask import Flask,render_template,request
 import requests
-from requests import sessions
 import json
 from datetime import date
 app = Flask(__name__,template_folder="../template")
@@ -24,9 +23,9 @@ def i():
 
     }
     response = requests.request("GET", url, headers=headers, data=payload)
-    for session in response.json()["sessions"]:
+    for session in response.json()['sessions']:
         if session['available_capacity'] > 0:
-            w[session["center_id"]]=session['address']
+            w[session['center_id']]=session['address']
     return render_template("output.html", json_object = w)
 
 
