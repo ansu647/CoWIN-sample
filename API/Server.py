@@ -23,7 +23,9 @@ def i():
 
     }
     response = requests.request("GET", url, headers=headers, data=payload)
-    for session in response.json()['sessions']:
+    res= response.json()
+    print(res)
+    for session in res['sessions']:
         if session['available_capacity'] > 0:
             w[session['center_id']]=session['address']
     return render_template("output.html", json_object = w)
