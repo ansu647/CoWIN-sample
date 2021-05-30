@@ -11,7 +11,7 @@ def index():
 def i():
     y = request.form["district_id"]
     today = date.today().strftime("%d-%m-%Y")
-    url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=140&date=31-05-2021".format(y,today)
+    url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=140&date=31-05-2021"
     payload={}
     headers = {
         'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
